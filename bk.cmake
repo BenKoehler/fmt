@@ -1,4 +1,4 @@
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/thirdparty/fmt EXCLUDE_FROM_ALL)
+add_subdirectory(${PROJECT_SOURCE_DIR}/thirdparty/fmt EXCLUDE_FROM_ALL)
 ConfigureCompileOptions(fmt-header-only INTERFACE)
 target_compile_definitions(fmt-header-only INTERFACE BK_HAS_FMT)
 
